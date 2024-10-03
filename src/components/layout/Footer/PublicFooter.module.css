@@ -1,0 +1,451 @@
+.footer_section {
+  width: 100%;
+  float: left;
+  background-color: #252525;
+  height: auto;
+}
+
+.layout_padding {
+  padding-top: 90px;
+  padding-bottom: 0px;
+}
+
+.footer_logo {
+  text-align: center;
+}
+
+.footer_logo img {
+  max-width: 100px;
+  height: auto;
+  text-align: center;
+}
+
+.footer_section .distributor_info h3 {
+  color: #09af6d;
+  font-weight: 700;
+  font-size: 20px;
+  padding: 0px;
+}
+.footer_section .distributor_info h4 {
+  color: #fff;
+  font-weight: 400;
+  font-size: 15px;
+  padding: 0;
+}
+.footer_section .distributor_info .distributor_info_locations {
+  margin-top: 30px;
+}
+.footer_section .distributor_info .distributor_info_locations h3 {
+  color: #09af6d;
+  padding: 0;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.footer_section .distributor_info .distributor_info_locations ul {
+}
+
+.footer_section .distributor_info .distributor_info_locations ul h3 {
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+}
+.footer_section .distributor_info .distributor_info_locations ul li {
+  font-size: 15px;
+}
+.footer_section .distributor_info .distributor_info_locations ul li > strong {
+  display: block;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  font-size: 18px;
+}
+.footer_section
+  .distributor_info
+  .distributor_info_locations
+  ul
+  li
+  span
+  strong {
+  font-weight: 500;
+  font-size: 15px;
+}
+.footer_section .distributor_info .distributor_info_contact_detailes {
+  margin-top: 30px;
+}
+.footer_section .distributor_info .distributor_info_contact_detailes h3 {
+}
+.footer_section .distributor_info .distributor_info_contact_detailes ul li {
+  font-size: 15px;
+}
+.footer_section
+  .distributor_info
+  .distributor_info_contact_detailes
+  ul
+  li
+  strong {
+  font-weight: 400;
+}
+
+.footer_section
+  .distributor_info
+  .distributor_info_contact_detailes
+  ul
+  li
+  mark {
+  color: #ffffff;
+  background-color: transparent;
+}
+
+.input_bt {
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  border-bottom: 1px solid #ffffff !important;
+}
+
+.mail_bt {
+  width: 100%;
+  float: left;
+  font-size: 18px;
+  color: #fff;
+  background-color: transparent;
+  padding: 5px 0px 5px 0px;
+  height: 60px;
+  border: 0px;
+}
+
+input.mail_bt::placeholder {
+  color: #fff;
+}
+
+.subscribe_bt {
+  width: 30%;
+  float: right;
+  font-size: 16px;
+  color: #f26522;
+  background-color: transparent;
+  padding: 20px 0px 5px 0px;
+  border-radius: 30px;
+  border: 0px;
+  text-transform: uppercase;
+  text-align: right;
+}
+
+.subscribe_bt a {
+  color: #efc900;
+}
+
+.subscribe_bt a:hover {
+  color: #ffffff;
+}
+
+.footer_menu {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer_menu ul {
+  margin: 0px;
+  padding: 0px;
+  display: inline-block;
+}
+
+.footer_menu li {
+  float: left;
+  font-size: 16px;
+  color: #f1f1f1;
+  padding: 20px 10px 0px 10px;
+}
+
+.footer_menu li a {
+  color: #f1f1f1;
+}
+.footer_menu li a.active {
+  color: #efc900;
+}
+
+.footer_menu li a:hover {
+  color: #efc900;
+}
+
+.location_main {
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 30px;
+  text-align: center;
+}
+
+.location_main {
+  float: left;
+  font-size: 16px;
+  color: #ffffff;
+  padding: 30px 30px 30px 30px;
+}
+
+.location_main a {
+  color: #ffffff;
+}
+
+.location_main a:hover {
+  color: #f26522;
+}
+
+.distributor_info {
+  color: #ffffff; /* Ensuring text is white for readability */
+  font-size: 14px; /* Slightly smaller font size for informational text */
+  text-align: center; /* Center-align the text */
+  padding: 20px 0; /* Add some padding above and below for spacing */
+  line-height: 1.5; /* Improving the line height for better readability */
+}
+
+.distributor_info a {
+  color: #ffffff; /* Keeping the link color consistent with your design */
+}
+
+.distributor_info a:hover {
+  color: #ffffff; /* Change color on hover */
+  text-decoration: underline !important;
+}
+
+/* footer section end */
+
+/* copyright section start */
+
+.copyright_section {
+  width: 100%;
+  float: left;
+  background-color: #252525;
+  height: auto;
+}
+
+.copyright_text {
+  width: 100%;
+  float: left;
+  color: #ffffff;
+  text-align: center;
+  font-size: 16px;
+  margin: 20px 0px;
+}
+
+.copyright_text a {
+  color: #ffffff;
+}
+
+.copyright_text a:hover {
+  color: #f26522;
+}
+
+.margin_top90 {
+  margin-top: 90px;
+}
+
+/* copyright section end */
+
+.social_media_links {
+  border-top: 3px solid #f26522; /* A thicker, more pronounced border */
+  border-bottom: 1px solid #ccc;
+  padding: 30px 0; /* Increased padding for more space */
+  background-color: #f7f7f7;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin: 30px 0;
+}
+
+.social_media_links img {
+  height: 40px;
+  width: auto;
+  margin: 0 15px; /* Adds horizontal space between icons */
+}
+
+.social_media_links a {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.social_media_links a:hover {
+  transform: scale(1.1); /* Slightly enlarge the icons on hover */
+  opacity: 0.8; /* Slightly dim the icons on hover */
+}
+
+.social_media_links h2 {
+  margin-bottom: 20px;
+  color: #333;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+}
+
+a svg {
+  fill: #ff5722; /* Shopee brand color, for example */
+  transition: fill 0.3s; /* Smooth transition for hover */
+}
+
+a:hover svg {
+  fill: #ffccbc; /* Lighter Shopee brand color on hover */
+}
+
+.sidenav .submenu {
+  padding-left: 50px; /* Increase padding to move submenu items to the right */
+  font-size: 1em; /* Set font size equal to main menu items */
+}
+
+.kilogram_desc {
+  font-size: 14px;
+  color: #888;
+  /* margin: 5px 0 15px 0; */
+  margin: 0;
+  text-align: center;
+  display: block;
+}
+
+.modal-buy-now .modal-content .modal-header .modal-title {
+  padding: 0;
+  font-size: 20px;
+}
+.modal-buy-now .modal-content .form-group .form-control:focus {
+  border-color: rgba(242, 101, 34, 0.41) !important;
+  box-shadow: 0 0 0 0.2rem rgba(242, 101, 34, 0.22);
+}
+
+.modal-buy-now .modal-content .form-group label {
+  color: #212529;
+  font-size: 15px;
+}
+.modal-buy-now .modal-content .form-group input {
+  font-size: 16px;
+}
+
+.modal-buy-now .modal-content .modal-footer .btn-close {
+  transition: all 0.3s ease;
+}
+.modal-buy-now .modal-content .modal-footer .btn-close:hover {
+  transform: translateY(-2px);
+}
+
+.modal-buy-now .modal-content .modal-footer .btn-submit {
+  background-color: #efc900;
+  color: #212529;
+  border: 1px solid #212529;
+  color: #212529 !important;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+.modal-buy-now .modal-content .modal-footer .btn-submit:hover {
+  background-color: #e0a800;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px);
+}
+.modal-buy-now .modal-content .modal-footer .btn-submit:focus {
+}
+.modal-buy-now .modal-content .modal-footer .btn-close:focus {
+}
+@media (max-width: 1400px) {
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+}
+
+@media only screen and (max-width: 575.98px) {
+  .distributor_info_contact_detailes ul li strong span {
+    display: none;
+  }
+  .footer_section
+    .distributor_info
+    .distributor_info_contact_detailes
+    ul
+    li
+    strong {
+    font-size: 16px;
+  }
+  .footer_section
+    .distributor_info
+    .distributor_info_contact_detailes
+    ul
+    li
+    strong {
+    display: block;
+  }
+  .footer_section .distributor_info .distributor_info_contact_detailes ul li {
+    margin-bottom: 20px;
+  }
+  .distributor_info_contact_detailes ul li span > span {
+    display: none;
+  }
+  .footer_section
+    .distributor_info
+    .distributor_info_contact_detailes
+    ul
+    li
+    mark {
+    display: block;
+  }
+  .distributor_info_contact_detailes ul li a span {
+    display: none;
+  }
+  .distributor_info_contact_detailes ul li span:nth-child(3) {
+    display: none;
+  }
+  .distributor_info_contact_detailes ul li a {
+    display: block;
+  }
+  .footer_section
+    .distributor_info
+    .distributor_info_contact_detailes
+    ul
+    li
+    mark {
+    padding: 0;
+  }
+}
+
+@media only screen and (min-width: 599px) and (max-width: 767px) {
+}
+
+@media only screen and (min-width: 280px) and (max-width: 599px) {
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .input_bt {
+    width: 80%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .input_bt {
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .input_bt {
+    width: 100%;
+  }
+  .mail_bt {
+    width: 70%;
+  }
+  .footer_menu li {
+    float: none;
+    padding: 10px 10px 0px 10px;
+  }
+  .location_main {
+    padding: 30px 0px 30px 0px;
+  }
+}
+
+@media (max-width: 575px) {
+  .input_bt {
+    width: 100%;
+  }
+  .mail_bt {
+    width: 70%;
+  }
+  .footer_menu li {
+    float: none;
+    padding: 10px 10px 0px 10px;
+  }
+  .location_main {
+    padding: 30px 0px 30px 0px;
+  }
+}

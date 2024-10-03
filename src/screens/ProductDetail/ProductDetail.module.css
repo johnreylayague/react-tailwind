@@ -1,0 +1,21 @@
+.nav_menu li {
+  position: relative;
+}
+
+.nav_menu li:not(:last-child)::before {
+  position: absolute;
+  top: 50%;
+  right: -22px;
+  transform: translate(-50%, -40%);
+  content: "";
+  background-image: url(../../assets//icons//right-chevron.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  height: 11px;
+  width: 11px;
+  display: block;
+}
+.tags li:not(:last-child) a::after {
+  content: ",";
+}

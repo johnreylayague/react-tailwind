@@ -1,0 +1,406 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+.logo {
+  height:50px;
+  width: 50px;
+  position: absolute;
+  padding: 5px;
+  padding-left: 30px;
+}
+
+.logo-h2 {
+  color: #fff;
+  text-align: center;
+  font-family: 'Poppins';
+  margin-bottom: 3rem;
+}
+
+.logo-span {
+  color: #FF5C00;
+  font-family: 'Poppins';
+}
+
+.profile-container {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1rem;
+  text-align: center;
+  flex-direction: column;
+}
+.profile-img {
+  width: 100px;
+  height: 100px;
+  justify-content: center;
+  border-radius: 50%;
+  align-items: center;
+  cursor: pointer;
+}
+
+.profile-name {
+  color:#fff;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.sidebar {
+  background-color: #212121;
+  max-width: 400px;
+  min-height: 100vh; 
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Poppins';
+
+}
+.sideMenu {
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  cursor: pointer;
+  flex-grow: 1;
+
+}
+
+.sideMenu::-webkit-scrollbar {
+  color: #2A2A2A;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  display: flex;
+  padding: 1.5rem;
+  padding-left: 3rem;
+  font-size: 1.2rem;
+}
+
+.logout {
+  bottom: 10px;
+  padding: 1.5rem;
+  padding-left: 3rem;
+  display: flex;
+}
+
+.logout-container {
+  bottom: 0px;
+  margin-top: 10px;
+  display: flex;
+  cursor: pointer;
+}
+
+.a:hover,
+.logout:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(1px);
+  border-radius: 0 20px 20px 0;
+  width: 100%;
+  color: #FF5C00;
+}
+
+.hr {
+  border-top: 1px solid #fff;
+  margin-top: auto;
+  bottom: 10px;
+  width: 100%;
+}
+
+
+/* icons */
+.icon{
+  color: #fff;
+  margin-right: 2rem;
+}
+
+.icon:hover  {
+  color:#FF5C00;
+}
+
+.subMenu {
+  padding-left: 0; /* Removing the padding to align with parent */
+  height: 100%;
+  font-size: 1.1rem;
+  font-family: 'Poppins';
+}
+
+.subMenuItem {
+  display: block;
+  padding: 10px 0 10px 5rem; /* Adjusting padding here so text is still indented */
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+
+/* Icon styles for ExpandMore and ExpandLess */
+.fa-chevron-down, .fa-chevron-up {
+  float: right;
+  margin-right: 3rem;
+}
+
+/* for 1280px  */
+@media (max-width: 1280px) {
+  .logo {
+    height:50px;
+    width: 50px;
+    padding: 5px;
+    padding-left: 30px;
+  }
+  
+  .logo-h2 {
+    margin-bottom: 2rem;
+  }
+
+  .logo-span {
+    margin-bottom: 2rem;
+  }
+
+  .toggle {
+    height: 20px;
+    left: 16%;
+    top: 20px;
+  }
+  
+  .profile-container {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0.5rem;
+  }
+  .profile-img {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+  }
+  
+  .profile-name {
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+  
+  .sidebar {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+  }
+  
+  .a {
+    padding: 1.2rem;
+    padding-left: 3rem;
+    font-size: 1.2rem;
+  }
+  
+  .logout {
+    bottom:10px;
+    padding: 1.5rem;
+    padding-left: 3rem;
+  }
+  
+  .logout-container {
+    bottom: 0px;
+    margin-top: 6px;
+  }
+  
+  .a:hover,
+  .logout:hover {
+    width: 70%;
+  }
+  
+  .hr {
+    margin-top: auto;
+    bottom: 10px;
+    width: 100%;
+  }
+  
+  
+  /* icons */
+  .icon{
+    margin-right: 2rem;
+  }
+}
+
+/* for 1024 px width */
+@media (max-width: 1024px) {
+  .sidebar {
+    width: 100%;
+    padding-left: 0px;
+    padding: 0;
+    margin-bottom: 0;
+    height: 100%;
+  }
+  .logo {
+    padding: 0;
+  }
+
+  .logo-h2 {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+  }
+  .profile-container {
+    width: 75%;
+    margin-bottom: 0;
+  }
+  .a {
+    padding-left: 2rem; 
+    margin-bottom: 0;
+    padding: 1rem;
+    font-size: 1rem;
+  }
+  .icon {
+    margin-right: 1rem;
+  }
+  .logout {
+    padding-left: 2.5rem;
+    padding: 1rem;
+    bottom: 2px;
+    margin-top: 1rem;
+    font-size: 1rem;
+  }
+  .logout-container {
+    margin-top: 0;
+  }
+  .hr {
+    bottom: 20px;
+  }
+  .subMenu {
+    padding-left: 2rem; 
+    height: 100%;  
+  }
+  .subMenuItem {
+    font-size: 0.9rem;
+  }
+
+}
+/* for screen 768px lower */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    padding-left: 0px;
+    padding: 0;
+    margin-bottom: 0;
+    height: 100vh;
+  }
+  .logo {
+    padding: 0;
+    height: 30px;
+    width: 30px;
+  }
+
+  .logo-h2 {
+    margin-bottom: 0.5rem;
+    font-size: 0.8rem;
+  }
+  .logo-span {
+    font-size: 0.8rem;
+  }
+
+  .profile-container {
+    width: 75%;
+    margin-bottom: 0;
+  }
+  .profile-name {
+    font-size: 1rem;
+  }
+
+  .profile-img {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+  }
+
+  .a {
+    padding-left: 2rem; 
+    margin-bottom: 0;
+    padding: 1rem;
+    font-size: 0.8rem;
+  }
+  .icon {
+    margin-right: 1rem;
+  }
+  .logout {
+    padding-left: 2.5rem;
+    padding: 1rem;
+    bottom: 2px;
+    margin-top: 1rem;
+    font-size: 0.8rem;
+  }
+  .logout-container {
+    margin-top: 0;
+  }
+  .hr {
+    bottom: 20px;
+  }
+  .subMenu {
+    font-size: 0.8rem;
+  }
+}
+
+/* for 480px */
+@media (max-width: 600px) {
+  .sidebar {
+    width: 50%;
+    padding-left: 0px;
+    padding: 0;
+    margin-bottom: 0;
+    height: 100vh;
+  }
+  .logo {
+    padding: 0;
+    height: 30px;
+    width: 30px;
+  }
+
+  .logo-h2 {
+    margin-bottom: 0.5rem;
+    font-size: 0.8rem;
+  }
+  .logo-span {
+    font-size: 0.8rem;
+  }
+
+  .profile-container {
+    width: 75%;
+    margin-bottom: 0;
+  }
+  .profile-name {
+    font-size: 1rem;
+  }
+
+  .profile-img {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+  }
+
+  .a {
+    padding-left: 2rem; 
+    margin-bottom: 0;
+    padding: 1rem;
+    font-size: 0.8rem;
+  }
+  .icon {
+    margin-right: 1rem;
+  }
+  .logout {
+    padding-left: 2.5rem;
+    padding: 1rem;
+    bottom: 2px;
+    margin-top: 1rem;
+    font-size: 0.8rem;
+  }
+  .logout-container {
+    margin-top: 0;
+  }
+.hr {
+    bottom: 20px;
+  }
+
+}
+
+.active {
+  background-color: rgba(255, 94, 0, 0.616)!important; /* Light background */
+  border: 1px solid #FF5C00;
+  color: #fff !important; /* Orange text to keep it highlighted */
+  border-radius: 0 20px 20px 0 !important; /* Rounded corners on the right side */
+}

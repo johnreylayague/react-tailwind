@@ -1,0 +1,21 @@
+.scrollbar {
+  overflow-y: auto;
+}
+.scrollbar::-webkit-scrollbar {
+  width: 5px;
+}
+
+.scrollbar::-webkit-scrollbar-track {
+  /* border-radius: 100vh;
+      background: #f7f4ed; */
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  position: absolute;
+  border: 3px solid rgb(220, 220, 220);
+  border-radius: 7px;
+}
+
+.scrollbar::-webkit-scrollbar-thumb:hover {
+  /* background: #c0a0b9; */
+}
