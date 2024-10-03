@@ -1,7 +1,7 @@
 import React from "react";
 import Icons from "../Icons/Icons";
 
-const ArrowButton = ({ direction }) => {
+const ArrowButton = ({ direction, handleSlickSlider }) => {
   let content = "";
 
   if (direction === "left") {
@@ -17,7 +17,10 @@ const ArrowButton = ({ direction }) => {
   }
 
   return (
-    <button className="bg-[#F0F2F3] text-[#18181D] hover:bg-[#634832] hover:shadow-[4px_3px_24px_rgba(99,72,50,0.5)] group transition-colors duration-[.3s]  flex flex-row justify-center items-center px-[12.57px] py-[11.5px]">
+    <button
+      onClick={handleSlickSlider}
+      className="bg-[#F0F2F3] text-[#18181D] hover:bg-[#634832] hover:shadow-[4px_3px_24px_rgba(99,72,50,0.5)] group transition-colors duration-[.3s]  flex flex-row justify-center items-center px-[12.57px] py-[11.5px]"
+    >
       {content}
     </button>
   );

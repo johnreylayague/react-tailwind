@@ -9,6 +9,7 @@ import about from "./image/banner/about.jpg";
 import plusCircle from "./icons/plus-circle.png";
 import quotation from "./icons/quotation.png";
 import star from "./icons/star.png";
+import check from "./icons/check.svg";
 import star2 from "./icons/star2.png";
 import star3 from "./icons/star3.png";
 import ceo1 from "./image/photos/1.jpg";
@@ -52,6 +53,7 @@ const banner = {
 };
 const icons = {
   coffeeCup,
+  check,
   coffeeCup2,
   coffeeCupWhite,
   priceTag,

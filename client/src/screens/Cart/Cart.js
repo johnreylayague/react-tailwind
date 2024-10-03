@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useRef } from "react";
 import Slider from "react-slick";
 import BreadcrumbHeader from "../../components/common/elements/Breadcrumb/BreadcrumbHeader.js";
 import ContainerWrapper from "../../components/common/elements/Wrapper/ContainerWrapper.js";
@@ -20,6 +20,15 @@ import CheckoutButton from "./components/CheckoutButton/CheckoutButton.js";
 
 function Cart() {
   const { handleProductModal } = useContext(UserContext);
+  let sliderRef = useRef(null);
+
+  const handlePrevSlickSlider = () => {
+    sliderRef.current.slickPrev();
+  };
+
+  const handleNextSlickSlider = () => {
+    sliderRef.current.slickNext();
+  };
 
   const noAction = (event) => {
     event.preventDefault();
@@ -65,8 +74,18 @@ function Cart() {
         {/* Upsells and Cart Total */}
         <GridWrapper className={"pt-[50px]"}>
           <div className="col-span-12 lg:col-span-6 px-[15px]">
-            <SectionHeader title={"Upsells"} />
-            <Slider {...onCartSettings} className="mt-[30px] mx-[-15px]">
+            <SectionHeader
+              title={"Upsells"}
+              handleNextSlickSlider={handleNextSlickSlider}
+              handlePrevSlickSlider={handlePrevSlickSlider}
+            />
+            <Slider
+              ref={(slider) => {
+                sliderRef.current = slider;
+              }}
+              {...onCartSettings}
+              className="mt-[30px] mx-[-15px]"
+            >
               {assets.jsonData.topPicksList.map((product) => {
                 return (
                   <ProductCard

@@ -113,13 +113,24 @@ const freshArrivalsList = [
   {
     id: 3,
     discount: "40% Off",
-    image: "mandarin-box.png",
-    name: "Fruit and Jell Mandarin",
+    image: "mango.png",
+    name: "Fruit and Jell Mango",
     description:
       "Cras ultricies ligula sed magna dictum porta. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.",
     stars: [true, true, true, false, false],
     currentPrice: "12$",
     previousPrice: "20$",
+  },
+  {
+    id: 4,
+    discount: "40% Off",
+    image: "grape-fruit.png",
+    name: "Vita and Grape Fruit",
+    description:
+      "Cras ultricies ligula sed magna dictum porta. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.",
+    stars: [true, true, true, true, false],
+    currentPrice: "15$",
+    previousPrice: "30$",
   },
 ];
 

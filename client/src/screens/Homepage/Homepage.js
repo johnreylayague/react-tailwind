@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useRef } from "react";
 import assets from "../../assets/assets.js";
 import PromoBanner from "../../components/common/elements/Banner/PromoBanner.js";
 import ContainerWrapper from "../../components/common/elements/Wrapper/ContainerWrapper.js";
@@ -24,6 +24,15 @@ import {
 
 function Homepage() {
   const { handleProductModal } = useContext(UserContext);
+  let sliderRef = useRef(null);
+
+  const handlePrevSlickSlider = () => {
+    sliderRef.current.slickPrev();
+  };
+
+  const handleNextSlickSlider = () => {
+    sliderRef.current.slickNext();
+  };
 
   return (
     <>
@@ -69,11 +78,16 @@ function Homepage() {
 
       {/* Fresh Arrivals */}
       <ContainerWrapper className={"mt-[49px]"}>
-        <SectionHeader title={"Fresh Arrivals"} />
+        <SectionHeader
+          title={"Fresh Arrivals"}
+          handlePrevSlickSlider={handlePrevSlickSlider}
+          handleNextSlickSlider={handleNextSlickSlider}
+        />
         <FreshArrivalsList
           dataFreshArrivalsList={assets.jsonData.freshArrivalsList}
           openModal={handleProductModal}
           sliderSettings={freshArrivalsSettings}
+          sliderRef={sliderRef}
         />
       </ContainerWrapper>
 

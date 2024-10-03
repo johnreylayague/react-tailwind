@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useRef, useState } from "react";
 import Slider from "react-slick";
 import UserContext from "../../contexts/UserContext.js";
 import BreadcrumbHeader from "../../components/common/elements/Breadcrumb/BreadcrumbHeader.js";
@@ -19,6 +19,15 @@ import ProductImageSection from "./components/ProductImageSection/ProductImageSe
 function ProductDetail() {
   const { handleProductModal } = useContext(UserContext);
   const [productTabsDetailNumber, setproductDetailNumber] = useState(1);
+  let sliderRef = useRef(null);
+
+  const handlePrevSlickSlider = () => {
+    sliderRef.current.slickPrev();
+  };
+
+  const handleNextSlickSlider = () => {
+    sliderRef.current.slickNext();
+  };
 
   const noAction = (event) => {
     event.preventDefault();
@@ -102,8 +111,18 @@ function ProductDetail() {
       </ContainerWrapper>
 
       <ContainerWrapper className="pt-[50px]">
-        <SectionHeader title={"Related Products"} />
-        <Slider {...freshArrivalsSettings} className="mt-[30px] mx-[-15px]">
+        <SectionHeader
+          title={"Related Products"}
+          handlePrevSlickSlider={handlePrevSlickSlider}
+          handleNextSlickSlider={handleNextSlickSlider}
+        />
+        <Slider
+          ref={(slider) => {
+            sliderRef.current = slider;
+          }}
+          {...freshArrivalsSettings}
+          className="mt-[30px] mx-[-15px]"
+        >
           {assets.jsonData.freshArrivalsList.map((product) => {
             return (
               <ProductCard key={product.id} productData={product} openModal={handleProductModal} />
