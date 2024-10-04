@@ -23,10 +23,7 @@ const ProductDetailsSection = ({
 }) => {
   return (
     <div className="col-span-12 lg:col-span-7 px-[15px]">
-      <WishlistAndSocialIcons
-        wishListOnClick={noAction}
-        socialMediaPlatforms={socialMediaPlatforms}
-      />
+      <WishlistAndSocialIcons noAction={noAction} socialMediaPlatforms={socialMediaPlatforms} />
       <ProductRating stars={productRating} />
       <ProductName title={productName} />
       <ProductPrice currentPrice={productCurrentPrice} previousPrice={productPreviousPrice} />
@@ -51,7 +48,7 @@ const ProductDetailsSection = ({
         <BuyNowButton btnLabel={"BUY NOW"} />
         <QuantityControl quantity={productQuantity} />
       </ActionWrapper>
-      <ProductAttributes onClick={noAction} listData={productAttribute} />
+      <ProductAttributes noAction={noAction} listData={productAttribute} />
     </div>
   );
 };

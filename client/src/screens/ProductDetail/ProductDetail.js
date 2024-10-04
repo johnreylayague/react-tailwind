@@ -51,9 +51,7 @@ function ProductDetail() {
       ),
     },
     {
-      label: `Reviews ${
-        assets.jsonData.productDetail.reviews && `(${assets.jsonData.productDetail.reviews})`
-      }`,
+      label: "Leave a Review",
       number: 3,
       content: (
         <ProductReviews
@@ -83,7 +81,7 @@ function ProductDetail() {
             productRecommendation={assets.jsonData.productDetail.productRecommendation}
           />
           <ProductDetailsSection
-            wishListOnClick={noAction}
+            noAction={noAction}
             socialMediaPlatforms={["facebook", "twitter", "instagram"]}
             productRating={assets.jsonData.productDetail.stars}
             productName={assets.jsonData.productDetail.productName}

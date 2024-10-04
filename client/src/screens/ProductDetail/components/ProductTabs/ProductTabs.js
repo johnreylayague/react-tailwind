@@ -2,7 +2,7 @@ import React from "react";
 
 const ProductTabs = ({ productDetailTabs, productTabsDetailNumber, tabs }) => {
   return (
-    <div className="col-span-12 md:col-span-4 px-[15px]">
+    <div className="col-span-12 lg:col-span-4 px-[15px]">
       <ul className="space-y-[10px]">
         {tabs.map((tab) => {
           return (

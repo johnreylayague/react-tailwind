@@ -1,6 +1,6 @@
 import React from "react";
 
-const ProductAttributes = ({ listData, onClick }) => {
+const ProductAttributes = ({ listData, noAction }) => {
   return (
     <ul className="mt-[23px] flex flex-col space-y-[15px]">
       {listData.map((list) => {
@@ -9,7 +9,7 @@ const ProductAttributes = ({ listData, onClick }) => {
             <span className="text-[#18181D] inline-block w-[120px] font-semibold">
               {list.label}:
             </span>
-            <a href="http://localhost:3000/" onClick={onClick} className="text-[#838383]">
+            <a href="/" onClick={noAction} className="text-[#838383]">
               {list.value}
             </a>
           </li>
